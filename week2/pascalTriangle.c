@@ -4,7 +4,7 @@ void Pascal(int n);
 
 int main() 
 { 
-    int n = 0; 
+    int n = 0;
     scanf("%d",&n);
     Pascal(n); 
     return 0; 
@@ -13,12 +13,12 @@ int main()
  void Pascal(int n){
      for (int line = 1; line <= n; line++) {
          for (int space = 1; space <= n - line; space++) {
-             printf("  ");
+             printf("   ");
          }
 
          int num = 1;
          for (int i = 1; i <= line; i++) {
-             printf("%4d", num);
+             printf("%6d", num);
              num = num * (line - i) / i;
          }
          printf("\n");
